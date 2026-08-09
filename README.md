@@ -1,0 +1,2 @@
+# WOW-MATRIX-
+8x8x8 LED 3D Matrix 
