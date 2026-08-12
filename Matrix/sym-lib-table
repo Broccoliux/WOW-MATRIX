@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "74HC574N") (type "Legacy") (uri "F:/OneDrive/Desktop/74HC574N.lib") (options "") (descr ""))
+)
