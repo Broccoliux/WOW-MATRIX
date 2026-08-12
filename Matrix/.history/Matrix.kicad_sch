@@ -4849,6 +4849,16 @@
 	)
 	(wire
 		(pts
+			(xy 300.99 36.83) (xy 300.99 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b33917a-b48e-4b0e-932d-50a6a6255be4")
+	)
+	(wire
+		(pts
 			(xy 389.89 195.58) (xy 384.81 195.58)
 		)
 		(stroke
@@ -5036,6 +5046,16 @@
 			(type default)
 		)
 		(uuid "87a7644c-b944-45da-9cf5-8df9f8008609")
+	)
+	(wire
+		(pts
+			(xy 306.07 30.48) (xy 306.07 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8828bc6f-4dbd-4a9f-b76c-bc7936bafefa")
 	)
 	(wire
 		(pts
@@ -6166,6 +6186,16 @@
 			(type default)
 		)
 		(uuid "e42be6a4-b4fc-476a-a4e5-37113cf80bf8")
+	)
+	(wire
+		(pts
+			(xy 300.99 33.02) (xy 306.07 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e545d545-ba57-49c8-bf0e-252d46c303cb")
 	)
 	(wire
 		(pts
@@ -9070,7 +9100,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 506.73 251.968 90)
 			(hide yes)
 			(show_name no)
@@ -9149,7 +9179,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 506.73 267.208 90)
 			(hide yes)
 			(show_name no)
@@ -9228,7 +9258,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 126.238 90)
 			(hide yes)
 			(show_name no)
@@ -9385,7 +9415,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 295.91 188.468 90)
 			(hide yes)
 			(show_name no)
@@ -9464,7 +9494,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 295.91 193.548 90)
 			(hide yes)
 			(show_name no)
@@ -9723,7 +9753,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 506.73 264.668 90)
 			(hide yes)
 			(show_name no)
@@ -9998,7 +10028,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 426.72 318.008 90)
 			(hide yes)
 			(show_name no)
@@ -10077,7 +10107,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 393.7 187.198 90)
 			(hide yes)
 			(show_name no)
@@ -10156,7 +10186,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 494.03 198.628 90)
 			(hide yes)
 			(show_name no)
@@ -10394,7 +10424,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 309.88 251.968 90)
 			(hide yes)
 			(show_name no)
@@ -10473,7 +10503,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 405.13 262.128 90)
 			(hide yes)
 			(show_name no)
@@ -10552,7 +10582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 307.848 90)
 			(hide yes)
 			(show_name no)
@@ -10586,10 +10616,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3de")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a144")
 		)
 		(instances
 			(project "Matrix"
@@ -10632,7 +10662,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DIP254P762X420-20"
+		(property "Footprint" "74HC574N:DIP254P762X420-20"
 			(at 397.51 313.69 0)
 			(hide yes)
 			(show_name no)
@@ -10827,7 +10857,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 295.91 198.628 90)
 			(hide yes)
 			(show_name no)
@@ -11062,7 +11092,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 109.982 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -11219,7 +11249,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 335.788 90)
 			(hide yes)
 			(show_name no)
@@ -11377,7 +11407,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 97.282 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -11456,7 +11486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 405.13 251.968 90)
 			(hide yes)
 			(show_name no)
@@ -11535,7 +11565,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -11569,10 +11599,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3df")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a145")
 		)
 		(instances
 			(project "Matrix"
@@ -11616,7 +11646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 116.332 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -11776,7 +11806,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 326.898 90)
 			(hide yes)
 			(show_name no)
@@ -11810,10 +11840,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e0")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a146")
 		)
 		(instances
 			(project "Matrix"
@@ -11860,7 +11890,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 421.64 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -11957,7 +11987,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 309.88 259.588 90)
 			(hide yes)
 			(show_name no)
@@ -12122,7 +12152,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 410.21 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -12494,7 +12524,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 426.72 333.248 90)
 			(hide yes)
 			(show_name no)
@@ -12573,7 +12603,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 494.03 191.008 90)
 			(hide yes)
 			(show_name no)
@@ -12652,7 +12682,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 405.13 257.048 90)
 			(hide yes)
 			(show_name no)
@@ -12731,7 +12761,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 506.73 257.048 90)
 			(hide yes)
 			(show_name no)
@@ -12810,7 +12840,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 90.678 90)
 			(hide yes)
 			(show_name no)
@@ -12844,10 +12874,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e1")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a147")
 		)
 		(instances
 			(project "Matrix"
@@ -13058,7 +13088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 103.632 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -13214,7 +13244,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 236.728 90)
 			(hide yes)
 			(show_name no)
@@ -13248,10 +13278,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e2")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a148")
 		)
 		(instances
 			(project "Matrix"
@@ -13478,7 +13508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 325.628 90)
 			(hide yes)
 			(show_name no)
@@ -13562,7 +13592,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 331.47 323.85 0)
 			(hide yes)
 			(show_name no)
@@ -13814,7 +13844,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 393.7 197.358 90)
 			(hide yes)
 			(show_name no)
@@ -13970,7 +14000,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 426.72 323.088 90)
 			(hide yes)
 			(show_name no)
@@ -14049,7 +14079,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 426.72 335.788 90)
 			(hide yes)
 			(show_name no)
@@ -14363,7 +14393,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 309.88 257.048 90)
 			(hide yes)
 			(show_name no)
@@ -15090,7 +15120,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 426.72 328.168 90)
 			(hide yes)
 			(show_name no)
@@ -15251,7 +15281,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 443.23 323.85 0)
 			(hide yes)
 			(show_name no)
@@ -15348,7 +15378,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 163.068 90)
 			(hide yes)
 			(show_name no)
@@ -15382,10 +15412,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e3")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a149")
 		)
 		(instances
 			(project "Matrix"
@@ -15504,7 +15534,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 426.72 320.548 90)
 			(hide yes)
 			(show_name no)
@@ -15665,7 +15695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 523.24 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -15762,7 +15792,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 393.7 184.658 90)
 			(hide yes)
 			(show_name no)
@@ -15843,7 +15873,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 136.652 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -15922,7 +15952,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 393.7 194.818 90)
 			(hide yes)
 			(show_name no)
@@ -16001,7 +16031,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 182.118 90)
 			(hide yes)
 			(show_name no)
@@ -16035,10 +16065,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e4")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a14a")
 		)
 		(instances
 			(project "Matrix"
@@ -16080,7 +16110,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 405.13 259.588 90)
 			(hide yes)
 			(show_name no)
@@ -16421,7 +16451,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 393.7 199.898 90)
 			(hide yes)
 			(show_name no)
@@ -16500,7 +16530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 318.008 90)
 			(hide yes)
 			(show_name no)
@@ -16579,7 +16609,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 309.88 262.128 90)
 			(hide yes)
 			(show_name no)
@@ -16658,7 +16688,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 333.248 90)
 			(hide yes)
 			(show_name no)
@@ -16814,7 +16844,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 199.898 90)
 			(hide yes)
 			(show_name no)
@@ -16848,10 +16878,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e5")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a14b")
 		)
 		(instances
 			(project "Matrix"
@@ -16893,7 +16923,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 291.338 90)
 			(hide yes)
 			(show_name no)
@@ -16927,10 +16957,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e6")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a14c")
 		)
 		(instances
 			(project "Matrix"
@@ -16972,7 +17002,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 494.03 188.468 90)
 			(hide yes)
 			(show_name no)
@@ -17206,7 +17236,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 295.91 185.928 90)
 			(hide yes)
 			(show_name no)
@@ -17285,7 +17315,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 494.03 196.088 90)
 			(hide yes)
 			(show_name no)
@@ -17364,7 +17394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 405.13 254.508 90)
 			(hide yes)
 			(show_name no)
@@ -17443,7 +17473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 330.708 90)
 			(hide yes)
 			(show_name no)
@@ -17522,7 +17552,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 320.548 90)
 			(hide yes)
 			(show_name no)
@@ -17709,7 +17739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 506.73 269.748 90)
 			(hide yes)
 			(show_name no)
@@ -17946,7 +17976,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 295.91 180.848 90)
 			(hide yes)
 			(show_name no)
@@ -18025,7 +18055,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 506.73 262.128 90)
 			(hide yes)
 			(show_name no)
@@ -18258,7 +18288,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 74.168 90)
 			(hide yes)
 			(show_name no)
@@ -18292,10 +18322,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e7")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a14d")
 		)
 		(instances
 			(project "Matrix"
@@ -18337,7 +18367,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 426.72 330.708 90)
 			(hide yes)
 			(show_name no)
@@ -18679,7 +18709,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 295.91 183.388 90)
 			(hide yes)
 			(show_name no)
@@ -18835,7 +18865,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 309.88 254.508 90)
 			(hide yes)
 			(show_name no)
@@ -18914,7 +18944,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 506.73 254.508 90)
 			(hide yes)
 			(show_name no)
@@ -18995,7 +19025,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 144.272 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -19074,7 +19104,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 506.73 259.588 90)
 			(hide yes)
 			(show_name no)
@@ -19230,7 +19260,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 393.7 189.738 90)
 			(hide yes)
 			(show_name no)
@@ -19309,7 +19339,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 405.13 249.428 90)
 			(hide yes)
 			(show_name no)
@@ -19496,7 +19526,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 393.7 192.278 90)
 			(hide yes)
 			(show_name no)
@@ -19653,7 +19683,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 393.7 182.118 90)
 			(hide yes)
 			(show_name no)
@@ -19732,7 +19762,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 145.288 90)
 			(hide yes)
 			(show_name no)
@@ -19766,10 +19796,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e8")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a14e")
 		)
 		(instances
 			(project "Matrix"
@@ -19997,7 +20027,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 295.91 191.008 90)
 			(hide yes)
 			(show_name no)
@@ -20272,7 +20302,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 405.13 264.668 90)
 			(hide yes)
 			(show_name no)
@@ -20351,7 +20381,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 494.03 183.388 90)
 			(hide yes)
 			(show_name no)
@@ -20432,7 +20462,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 129.032 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -20936,7 +20966,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 109.728 90)
 			(hide yes)
 			(show_name no)
@@ -20970,10 +21000,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3e9")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a14f")
 		)
 		(instances
 			(project "Matrix"
@@ -21385,7 +21415,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 295.91 196.088 90)
 			(hide yes)
 			(show_name no)
@@ -21464,7 +21494,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 328.168 90)
 			(hide yes)
 			(show_name no)
@@ -21624,7 +21654,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 494.03 185.928 90)
 			(hide yes)
 			(show_name no)
@@ -21703,7 +21733,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 309.88 246.888 90)
 			(hide yes)
 			(show_name no)
@@ -22086,7 +22116,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 426.72 325.628 90)
 			(hide yes)
 			(show_name no)
@@ -22273,7 +22303,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 494.03 201.168 90)
 			(hide yes)
 			(show_name no)
@@ -22462,7 +22492,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 122.682 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -22542,7 +22572,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 175.26 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -22639,7 +22669,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 405.13 246.888 90)
 			(hide yes)
 			(show_name no)
@@ -22723,7 +22753,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 510.54 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -22928,7 +22958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 494.03 193.548 90)
 			(hide yes)
 			(show_name no)
@@ -23208,7 +23238,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 326.39 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -23699,7 +23729,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
 			(at 361.95 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -23778,7 +23808,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 323.088 90)
 			(hide yes)
 			(show_name no)
@@ -23862,7 +23892,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 312.42 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -24067,7 +24097,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 218.948 90)
 			(hide yes)
 			(show_name no)
@@ -24101,10 +24131,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3ea")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a150")
 		)
 		(instances
 			(project "Matrix"
@@ -24304,7 +24334,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 255.778 90)
 			(hide yes)
 			(show_name no)
@@ -24338,10 +24368,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3eb")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a151")
 		)
 		(instances
 			(project "Matrix"
@@ -24383,7 +24413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 60.96 272.288 90)
 			(hide yes)
 			(show_name no)
@@ -24417,10 +24447,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3dd")
+			(uuid "f2044945-cd91-48ce-b056-b7b028bcd3ec")
 		)
 		(pin "2"
-			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a143")
+			(uuid "b9a9521f-5d07-48c1-9a1b-731db574a152")
 		)
 		(instances
 			(project "Matrix"
@@ -24462,7 +24492,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 309.88 249.428 90)
 			(hide yes)
 			(show_name no)
@@ -24541,7 +24571,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0815_2038Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 309.88 264.668 90)
 			(hide yes)
 			(show_name no)
