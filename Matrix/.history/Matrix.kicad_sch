@@ -2497,6 +2497,12 @@
 		(uuid "a4a71e2b-d62c-4447-a0ad-e30a6c3dad36")
 	)
 	(junction
+		(at 219.71 259.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a874fc35-7304-4aa6-ba26-9ee47ccb0f0d")
+	)
+	(junction
 		(at 381 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2807,6 +2813,16 @@
 			(type default)
 		)
 		(uuid "12117eaf-3aae-4bed-aee4-48b5ab299f3a")
+	)
+	(wire
+		(pts
+			(xy 227.33 254) (xy 217.17 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1439175d-0748-463c-8639-4466102c5a1f")
 	)
 	(wire
 		(pts
@@ -3140,6 +3156,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 256.54) (xy 219.71 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4232e31f-8ca4-4dbf-9296-0dbfaefdf20a")
+	)
+	(wire
+		(pts
 			(xy 74.93 309.88) (xy 69.85 309.88)
 		)
 		(stroke
@@ -3187,6 +3213,16 @@
 			(type default)
 		)
 		(uuid "470c13e1-ccef-4ace-988d-65495161bf15")
+	)
+	(wire
+		(pts
+			(xy 217.17 251.46) (xy 217.17 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "472f18f5-afda-4a89-8125-6953d637c820")
 	)
 	(wire
 		(pts
@@ -3800,6 +3836,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 256.54) (xy 219.71 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa2cfcbf-8118-400c-9bc6-895e6111a67a")
+	)
+	(wire
+		(pts
 			(xy 101.6 153.67) (xy 106.68 153.67)
 		)
 		(stroke
@@ -3867,6 +3913,16 @@
 			(type default)
 		)
 		(uuid "c0c4a169-e596-4337-8c43-ba690e8ef8bd")
+	)
+	(wire
+		(pts
+			(xy 219.71 259.08) (xy 219.71 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c17d1027-dbc8-4998-902e-6fb97ef85312")
 	)
 	(wire
 		(pts
@@ -4047,6 +4103,16 @@
 			(type default)
 		)
 		(uuid "d8dc8a7c-65d2-4347-ab85-e8e21003b438")
+	)
+	(wire
+		(pts
+			(xy 227.33 259.08) (xy 219.71 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9bd79fc-d6e6-4c50-8b48-d506508aa7fa")
 	)
 	(wire
 		(pts
@@ -4406,6 +4472,30 @@
 			)
 		)
 	)
+	(global_label "A3"
+		(shape input)
+		(at 227.33 246.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2a677d30-46c3-425f-b177-7fea3ecf0cb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.0467 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "CATHODE 8"
 		(shape input)
 		(at 290.83 85.09 180)
@@ -4646,6 +4736,30 @@
 			)
 		)
 	)
+	(global_label "A2"
+		(shape input)
+		(at 227.33 243.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ba069b4-3fc5-4123-bfc7-12e25f01757a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.0467 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "CATHODE 5"
 		(shape input)
 		(at 63.5 218.44 180)
@@ -4731,6 +4845,30 @@
 		(uuid "a2213050-3ae0-4447-b90d-e6f3263d133b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 285.3653 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "A1"
+		(shape input)
+		(at 227.33 241.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1262cb8-0b85-403f-97cf-35f855ca276d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.0467 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6254,10 +6392,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "33c3eaa3-dce7-4e42-8b85-6bc5f5bb64fd")
 		(property "Reference" "U1"
-			(at 239.6333 233.68 0)
+			(at 231.902 234.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6268,7 +6405,7 @@
 			)
 		)
 		(property "Value" "74HC138"
-			(at 239.6333 236.22 0)
+			(at 231.902 237.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8794,6 +8931,160 @@
 			(project "Matrix"
 				(path "/88b088a6-0f2a-4bb0-891c-efec1204d77b"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 219.71 264.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8cfac502-7b82-4fb7-9c6a-d66b3f6bde2c")
+		(property "Reference" "#PWR023"
+			(at 219.71 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 219.71 267.716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 219.71 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f480f0bd-b449-4134-a343-98188dfef580")
+		)
+		(instances
+			(project "Matrix"
+				(path "/88b088a6-0f2a-4bb0-891c-efec1204d77b"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 217.17 251.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8dc0e569-a77c-476a-a2a3-2d74ced5ba3c")
+		(property "Reference" "#PWR024"
+			(at 217.17 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 217.17 247.904 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 217.17 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "34fb3ddc-9d2e-48c4-a274-53be56a19dc0")
+		)
+		(instances
+			(project "Matrix"
+				(path "/88b088a6-0f2a-4bb0-891c-efec1204d77b"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
