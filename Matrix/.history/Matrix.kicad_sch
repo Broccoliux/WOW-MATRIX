@@ -7231,7 +7231,7 @@
 	)
 	(global_label "CATHODE7"
 		(shape input)
-		(at 289.56 53.34 0)
+		(at 184.15 466.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7241,7 +7241,7 @@
 		)
 		(uuid "03d99c70-cbce-4c4e-89f6-582d61674040")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 302.1609 53.34 0)
+			(at 196.7509 466.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7759,7 +7759,7 @@
 	)
 	(global_label "A1"
 		(shape input)
-		(at 243.84 55.88 180)
+		(at 138.43 468.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7769,7 +7769,7 @@
 		)
 		(uuid "2e899643-aace-4888-b1d2-cd635c7b5004")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.5567 55.88 0)
+			(at 133.1467 468.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7879,7 +7879,7 @@
 	)
 	(global_label "CATHODE2"
 		(shape input)
-		(at 243.84 86.36 180)
+		(at 138.43 499.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7889,7 +7889,7 @@
 		)
 		(uuid "3cc50c8c-59e1-46c3-8e9c-48d9cb62805f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.2391 86.36 0)
+			(at 125.8291 499.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7903,7 +7903,7 @@
 	)
 	(global_label "D5"
 		(shape input)
-		(at 243.84 48.26 180)
+		(at 138.43 461.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7913,7 +7913,7 @@
 		)
 		(uuid "3ce7254c-f380-4229-8c98-3bde53210e40")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3753 48.26 0)
+			(at 132.9653 461.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8047,7 +8047,7 @@
 	)
 	(global_label "OE"
 		(shape input)
-		(at 243.84 66.04 180)
+		(at 138.43 478.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8057,7 +8057,7 @@
 		)
 		(uuid "44a35c08-2f30-44d8-9833-1e626ca312cb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3753 66.04 0)
+			(at 132.9653 478.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8095,7 +8095,7 @@
 	)
 	(global_label "D7"
 		(shape input)
-		(at 243.84 53.34 180)
+		(at 138.43 466.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8105,7 +8105,7 @@
 		)
 		(uuid "45298865-a660-49f8-92f7-0fc741584ef4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3753 53.34 0)
+			(at 132.9653 466.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8154,6 +8154,30 @@
 		(uuid "48c827dd-56b5-45bf-b27c-7f587f55409c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 346.3253 313.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CLK"
+		(shape input)
+		(at 138.43 476.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4b5be3ea-80d9-46fd-93cd-a2e981b2fdc8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.8767 476.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8263,7 +8287,7 @@
 	)
 	(global_label "CATHODE6"
 		(shape input)
-		(at 243.84 81.28 180)
+		(at 138.43 494.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8273,7 +8297,7 @@
 		)
 		(uuid "577d88a7-b77c-4f0c-a30e-7d28c3d21d15")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.2391 81.28 0)
+			(at 125.8291 494.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8311,7 +8335,7 @@
 	)
 	(global_label "A3"
 		(shape input)
-		(at 243.84 60.96 180)
+		(at 138.43 473.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8321,7 +8345,7 @@
 		)
 		(uuid "5d749bbe-af16-4157-aef1-5e4e34068d87")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.5567 60.96 0)
+			(at 133.1467 473.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8335,7 +8359,7 @@
 	)
 	(global_label "D3"
 		(shape input)
-		(at 243.84 43.18 180)
+		(at 138.43 455.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8345,7 +8369,7 @@
 		)
 		(uuid "60ba99e8-41ca-4453-9a96-859b6e030e85")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3753 43.18 0)
+			(at 132.9653 455.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8383,7 +8407,7 @@
 	)
 	(global_label "CATHODE1"
 		(shape input)
-		(at 243.84 68.58 180)
+		(at 138.43 481.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8393,7 +8417,7 @@
 		)
 		(uuid "6579625a-ab44-4403-b98d-af2d40e6ad00")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.2391 68.58 0)
+			(at 125.8291 481.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8575,7 +8599,7 @@
 	)
 	(global_label "D1"
 		(shape input)
-		(at 243.84 38.1 180)
+		(at 138.43 450.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8585,7 +8609,7 @@
 		)
 		(uuid "84e87202-4eb6-4771-9a0e-81c69f666f65")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3753 38.1 0)
+			(at 132.9653 450.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8887,7 +8911,7 @@
 	)
 	(global_label "D2"
 		(shape input)
-		(at 243.84 40.64 180)
+		(at 138.43 453.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8897,7 +8921,7 @@
 		)
 		(uuid "a4a17675-5104-47b6-a8b2-ed5f4ff0aadd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3753 40.64 0)
+			(at 132.9653 453.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8935,7 +8959,7 @@
 	)
 	(global_label "D4"
 		(shape input)
-		(at 243.84 45.72 180)
+		(at 138.43 458.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8945,7 +8969,7 @@
 		)
 		(uuid "ac1f828d-fccd-4dbd-9d0a-08e9f366c02a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3753 45.72 0)
+			(at 132.9653 458.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8959,7 +8983,7 @@
 	)
 	(global_label "D6"
 		(shape input)
-		(at 243.84 50.8 180)
+		(at 138.43 463.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8969,7 +8993,7 @@
 		)
 		(uuid "acb0f0ce-6d1d-4345-8957-6a19eff1b109")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3753 50.8 0)
+			(at 132.9653 463.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9103,7 +9127,7 @@
 	)
 	(global_label "CATHODE5"
 		(shape input)
-		(at 243.84 73.66 180)
+		(at 138.43 486.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9113,7 +9137,7 @@
 		)
 		(uuid "b5d21af7-9551-4b89-8a41-61a2fee50ef6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.2391 73.66 0)
+			(at 125.8291 486.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9271,7 +9295,7 @@
 	)
 	(global_label "CATHODE4"
 		(shape input)
-		(at 243.84 71.12 180)
+		(at 138.43 483.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9281,7 +9305,7 @@
 		)
 		(uuid "ce41c1d7-b239-4cca-8c25-6508eaa62f06")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.2391 71.12 0)
+			(at 125.8291 483.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9343,7 +9367,7 @@
 	)
 	(global_label "D0"
 		(shape input)
-		(at 243.84 35.56 180)
+		(at 138.43 448.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9353,7 +9377,7 @@
 		)
 		(uuid "d0c4203a-92d8-470c-92b7-835c9ef45d9f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3753 35.56 0)
+			(at 132.9653 448.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9511,7 +9535,7 @@
 	)
 	(global_label "CATHODE8"
 		(shape input)
-		(at 289.56 50.8 0)
+		(at 184.15 463.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9521,7 +9545,7 @@
 		)
 		(uuid "e7408e88-05c6-4976-8bb0-f98f27eacdde")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 302.1609 50.8 0)
+			(at 196.7509 463.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9535,7 +9559,7 @@
 	)
 	(global_label "A2"
 		(shape input)
-		(at 243.84 58.42 180)
+		(at 138.43 471.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9545,7 +9569,7 @@
 		)
 		(uuid "e9bddeb5-8d2d-4178-80ab-b2eb6f83aabb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.5567 58.42 0)
+			(at 133.1467 471.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9583,7 +9607,7 @@
 	)
 	(global_label "CATHODE3"
 		(shape input)
-		(at 243.84 88.9 180)
+		(at 138.43 501.65 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9593,7 +9617,7 @@
 		)
 		(uuid "ee17add9-2ddf-4ade-bce9-cd640afbb386")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.2391 88.9 0)
+			(at 125.8291 501.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13261,7 +13285,7 @@
 	)
 	(symbol
 		(lib_id "MCU_Espressif:ESP32-S3")
-		(at 266.7 63.5 0)
+		(at 161.29 476.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13272,7 +13296,7 @@
 		(fields_autoplaced yes)
 		(uuid "39ead95b-13ff-4d07-8595-ee6eb53ff894")
 		(property "Reference" "U10"
-			(at 268.8433 101.6 0)
+			(at 163.4333 514.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13283,7 +13307,7 @@
 			)
 		)
 		(property "Value" "ESP32-S3"
-			(at 268.8433 104.14 0)
+			(at 163.4333 516.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13294,7 +13318,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP4x4mm"
-			(at 267.97 115.316 0)
+			(at 162.56 528.066 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13305,7 +13329,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"
-			(at 268.732 17.272 0)
+			(at 163.322 430.022 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13316,7 +13340,7 @@
 			)
 		)
 		(property "Description" "Microcontroller, Wi-Fi 802.11b/g/n, Bluetooth, 32bit"
-			(at 265.938 19.812 0)
+			(at 160.528 432.562 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
