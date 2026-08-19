@@ -141,6 +141,18 @@
           "size_x": 1382,
           "size_y": 784
         }
+      },
+      {
+        "name": "Matrix.kicad_pro",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -16,
+          "pos_y": -16,
+          "size_x": 1382,
+          "size_y": 784
+        }
       }
     ]
   },
