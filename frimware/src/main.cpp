@@ -1,10 +1,11 @@
 #include <Arduino.h>
 
-void setup()
-{
+void setup() {
   Serial.begin(115200);
-  Serial.println("Cube firmware started!");
+  delay(1000);
+  Serial.println("ESP32-S3 is alive and connected!");
 }
 
 void loop() {
+  delay(1000);
 }
