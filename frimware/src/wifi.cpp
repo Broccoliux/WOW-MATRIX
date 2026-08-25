@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <WiFi.h>
-#include "wifi.h"
+#include "wifi_controller.h"
 
 const char *ssid = "LED_Cube_Controller";
 const char *password = "password123";

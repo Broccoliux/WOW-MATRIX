@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "cube.h"
-#include "wifi.h"
+#include "wifi_controller.h"
 
 void setup()
 {
