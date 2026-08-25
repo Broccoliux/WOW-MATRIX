@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "cube.h"
-#include "wifi_controller.h"
+#include "wifi.h"
 
 void setup()
 {
@@ -14,6 +14,5 @@ void setup()
 
 void loop()
 {
-  // Main control loop placeholder
   delay(1000);
 }
