@@ -50,3 +50,87 @@ header h1 {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+.badge.offline {
+  background-color: rgba(255, 82, 82, 0.15);
+  color: #ff5252;
+  border: 1px solid rgba(255, 82, 82, 0.3);
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.viewport-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  position: relative;
+  perspective: 1000px;
+}
+
+.cube-3d-space {
+  width: 400px;
+  height: 400px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #333;
+}
+
+.control-panel {
+  background-color: #181818;
+  border-left: 1px solid #282828;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.panel-card {
+  background-color: #1f1f1f;
+  border: 1px solid #2c2c2c;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.panel-card h3 {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#selectedCoord {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: #fff
+}
+
+.color-picker-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.color-picker-group label {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
