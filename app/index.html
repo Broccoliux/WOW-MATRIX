@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-  <title>MATRIX - v2</title>
-  <link rel="stylesheet" herf="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D LED Cube Matrix - v2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="app-container">
-    <header>
-      <h1>MATRIX</h1>
-      <span id="connectionStatus" class="badge offline">Offline</span>
-    </header>
+    <div class="app-container">
+        <header>
+            <h1>3D Matrix Controller</h1>
+            <span id="connectionStatus" class="badge offline">Offline</span>
+        </header>
 
-    <main class="workspace">
-      <section class="viewport-section">
-        <div id="cubeContainer" class="cube-3d-space"></div>
-      </section>
+        <main class="workspace">
 
-      <section
-    </main>
-  </body>
+            <section class="viewport-section">
+                <div id="cubeContainer" class="cube-3d-space">
 
+                </div>
+            </section>
+
+         
+            <section class="control-panel">
+                <div class="panel-card">
+                    <h3>Selected Voxel</h3>
+                    <p id="selectedCoord">Coordinates: None</p>
+
+                    <div class="color-picker-group">
+                        <label for="ledColorPicker">RGB Color:</label>
+                        <input type="color" id="ledColorPicker" value="#00ffcc" disabled>
+                    </div>
+                    <button id="applyColorBtn" class="btn-primary" disabled>Apply Color</button>
+                </div>
+
+                <div class="panel-card">
+                    <h3>Global Modes</h3>
+                    <div class="button-grid">
+                        <button onclick="setMode('solid')">Solid Fill</button>
+                        <button onclick="setMode('animations')">Animations</button>
+                        <button onclick="clearMatrix()">Clear All</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
