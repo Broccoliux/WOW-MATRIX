@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D LED Cube Matrix - v2</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Controller - v2 Lookup</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="app-container">
-        <header>
-            <h1>3D Matrix Controller</h1>
-            <span id="connectionStatus" class="badge offline">Offline</span>
-        </header>
+  <div class="app-container">
+    <header>
+      <h1>Matrix Direct Controller</h1>
+      <span id="connectionStatus" class="badge offline">Offline</span>
+    </header>
 
-        <main class="workspace">
+    <main class="workspace">
+      
+      <section class="table-section">
+        <div class="search-bar-group">
+          <input type="text" id="ledSearchInput" placeholder="Search LED index or coordinates (e.g., 15 or 1,2,3)..."
+            oninput="filterLEDTable()">
+        </div>
+        <div class="table-container">
+          <table id="ledTable">
+            <thead>
+              <tr>
+                <th><input type="checkbox" id="selectAll" onclick="toggleSelectAll(this)"></th>
+                <th>Index</th>
+                <th>Coordinates (X, Y, Z)</th>
+                <th>Current Color</th>
+              </tr>
+            </thead>
+            <tbody id="ledTableBody">
 
-            <section class="viewport-section">
-                <div id="cubeContainer" class="cube-3d-space">
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-                </div>
-            </section>
 
-         
-            <section class="control-panel">
-                <div class="panel-card">
-                    <h3>Selected Voxel</h3>
-                    <p id="selectedCoord">Coordinates: None</p>
+      <section class="control-panel">
+        <div class="panel-card">
+          <h3>Bulk Selection Actions</h3>
+          <p id="selectedCount">Selected: 0 LEDs</p>
 
-                    <div class="color-picker-group">
-                        <label for="ledColorPicker">RGB Color:</label>
-                        <input type="color" id="ledColorPicker" value="#00ffcc" disabled>
-                    </div>
-                    <button id="applyColorBtn" class="btn-primary" disabled>Apply Color</button>
-                </div>
+          <div class="color-picker-group">
+            <label for="bulkColorPicker">Assign Color:</label>
+            <input type="color" id="bulkColorPicker" value="#00ffcc">
+          </div>
+          <button id="applyBulkColorBtn" class="btn-primary" onclick="applyColorToSelected()">Apply to Selected</button>
+        </div>
 
-                <div class="panel-card">
-                    <h3>Global Modes</h3>
-                    <div class="button-grid">
-                        <button onclick="setMode('solid')">Solid Fill</button>
-                        <button onclick="setMode('animations')">Animations</button>
-                        <button onclick="clearMatrix()">Clear All</button>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+        <div class="panel-card">
+          <h3>Global Modes</h3>
+          <div class="button-grid">
+            <button onclick="setMode('solid')">Solid Fill</button>
+            <button onclick="setMode('animations')">Animations</button>
+            <button onclick="clearMatrix()">Clear All</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
