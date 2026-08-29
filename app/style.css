@@ -171,15 +171,7 @@ tr:hover {
   color: #ccc;
 }
 
-input[type="color"] {
-  -webkit-appearance: none;
-  border: none;
-  width: 36px;
-  height: 36px;
-  border-radius: 4px;
-  cursor: pointer;
-  background: none;
-}
+
 
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0;
