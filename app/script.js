@@ -8,15 +8,16 @@ function initLEDGrid() {
   state.leds = [];
   let index = 0;
 
+
   for (let z = 0; z < 4; z++) {
     for (let y = 0; y < 4; y++) {
       for (let x = 0; x < 4; x++) {
         state.leds.push({
-          id: indexx++,
+          id: index++,
           x: x,
           y: y,
           z: z,
-          color: '#000000'
+          color: '#000000' /
         });
       }
     }
@@ -24,11 +25,12 @@ function initLEDGrid() {
   renderTable(state.leds);
 }
 
-function renderTable(ledArry) {
+
+function renderTable(ledArray) {
   const tbody = document.getElementById('ledTableBody');
   tbody.innerHTML = '';
 
-  ledArry.forEach(led => {
+  ledArray.forEach(led => {
     const tr = document.createElement('tr');
 
     const isChecked = state.selectedLEDs.has(led.id) ? 'checked' : '';
@@ -42,13 +44,13 @@ function renderTable(ledArry) {
                 <span style="margin-left: 8px; font-family: monospace;">${led.color}</span>
             </td>
         `;
-        tbody.appendChild(tr);
+    tbody.appendChild(tr);
   });
 
   document.getElementById('selectedCount').innerText = `Selected: ${state.selectedLEDs.size} LEDs`;
 }
 
-function fillterLEDTable() {
+function filterLEDTable() {
   const query = document.getElementById('ledSearchInput').value.toLowerCase().trim();
 
   if (query === '') {
@@ -57,13 +59,13 @@ function fillterLEDTable() {
   }
 
   const filtered = state.leds.filter(led => {
-    const coorString = `${led.x},${led.y},${led.z}`;
-    return led.id.toString().includes(query) || coorString.includes(query);
-
+    const coordString = `${led.x},${led.y},${led.z}`;
+    return led.id.toString().includes(query) || coordString.includes(query);
   });
 
   renderTable(filtered);
 }
+
 
 function toggleSelectLED(id) {
   if (state.selectedLEDs.has(id)) {
@@ -74,11 +76,13 @@ function toggleSelectLED(id) {
   document.getElementById('selectedCount').innerText = `Selected: ${state.selectedLEDs.size} LEDs`;
 }
 
+
 function toggleSelectAll(masterCheckbox) {
   const checkboxes = document.querySelectorAll('#ledTableBody input[type="checkbox"]');
   checkboxes.forEach(cb => {
     cb.checked = masterCheckbox.checked;
   });
+
 
   if (masterCheckbox.checked) {
     state.leds.forEach(led => state.selectedLEDs.add(led.id));
@@ -102,5 +106,23 @@ function applyColorToSelected() {
     }
   });
 
+
   filterLEDTable();
 }
+
+
+function setMode(mode) {
+  console.log(`Mode set to: ${mode}`);
+}
+
+function clearMatrix() {
+  state.leds.forEach(led => led.color = '#000000');
+  state.selectedLEDs.clear();
+  document.getElementById('selectAll').checked = false;
+  filterLEDTable();
+}
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  initLEDGrid();
+});
