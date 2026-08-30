@@ -59,6 +59,48 @@ function fillterLEDTable() {
   const filtered = state.leds.filter(led => {
     const coorString = `${led.x},${led.y},${led.z}`;
     return led.id.toString().includes(query) || coorString.includes(query);
-    
+
   });
+
+  renderTable(filtered);
+}
+
+function toggleSelectLED(id) {
+  if (state.selectedLEDs.has(id)) {
+    state.selectedLEDs.delete(id);
+  } else {
+    state.selectedLEDs.add(id);
+  }
+  document.getElementById('selectedCount').innerText = `Selected: ${state.selectedLEDs.size} LEDs`;
+}
+
+function toggleSelectAll(masterCheckbox) {
+  const checkboxes = document.querySelectorAll('#ledTableBody input[type="checkbox"]');
+  checkboxes.forEach(cb => {
+    cb.checked = masterCheckbox.checked;
+  });
+
+  if (masterCheckbox.checked) {
+    state.leds.forEach(led => state.selectedLEDs.add(led.id));
+  } else {
+    state.selectedLEDs.clear();
+  }
+  document.getElementById('selectedCount').innerText = `Selected: ${state.selectedLEDs.size} LEDs`;
+}
+
+function applyColorToSelected() {
+  const chosenColor = document.getElementById('bulkColorPicker').value;
+
+  if (state.selectedLEDs.size === 0) {
+    alert('Please select at least one LED first.');
+    return;
+  }
+
+  state.leds.forEach(led => {
+    if (state.selectedLEDs.has(led.id)) {
+      led.color = chosenColor;
+    }
+  });
+
+  filterLEDTable();
 }
