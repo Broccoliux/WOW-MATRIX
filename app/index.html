@@ -60,6 +60,17 @@
           </div>
         </div>
       </section>
+
+      <section class="viewport-section">
+        <div class="viewport-controls">
+          <label>Rotate View:</label>
+          <input type="range" min="0" max="360" value="45" oninput="rotateMatrixX(this.value)"> X
+          <input type="range" min="0" max="360" value="-45" oninput="rotateMatrixY(this.value)"> Y
+        </div>
+        <div id="matrix3DSpace" class="matrix-3d-space">
+
+        </div>
+      </section>
     </main>
   </div>
 
