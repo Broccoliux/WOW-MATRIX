@@ -25,7 +25,7 @@ function initLEDGrid() {
     }
   }
   renderTable(state.leds);
-  render3DMatrix(); 
+  render3DMatrix();
   console.log(`Initialized full matrix with ${state.leds.length} individual LEDs.`);
 }
 
@@ -184,3 +184,18 @@ function rotateMatrixY(val) {
   space.style.transform = `rotateX(${currentX}deg) rotateY(${val}deg)`;
   space.dataset.y = val;
 }
+
+let isDragging = false;
+let startX = 0;
+let startY = 0;
+let currentRotationX = 45;
+let currentRotationY = -45;
+
+const viewport = document.querySelector('.viewport-section');
+
+
+viewport.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startX = e.clientX;
+  startY = e.clientY;
+});
