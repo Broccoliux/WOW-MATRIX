@@ -57,7 +57,7 @@ header h1 {
 
 .workspace {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 1fr 320px 1fr;
   flex: 1;
   overflow: hidden;
 }
@@ -215,4 +215,54 @@ button:hover:not(:disabled) {
   display: grid;
   grid-template-columns: 1fr;
   gap: 8px;
+}
+
+.viewport-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a0a0a;
+  position: relative;
+  perspective: 1200px;
+  overflow: hidden;
+}
+
+.viewport-controls {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(20, 20, 20, 0.85);
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  font-size: 0.8rem;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.viewport-controls input[type="range"] {
+  width: 60px;
+  accent-color: #00bcd4;
+}
+
+.matrix-3d-space {
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotateY(-45deg);
+  transition: transform 0.1s ease-out;
+  position: relative;
+}
+
+.node-3d {
+  width: 8px;
+  height: 8px;
+  background-color: #222;
+  border-radius: 50%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
