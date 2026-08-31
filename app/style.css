@@ -28,10 +28,10 @@ body {
 
 header {
   background-color: #1a1a1a;
-  padding: 14px 18px 12px;
+  padding: 12px 18px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 18px;
   border-bottom: 1px solid #282828;
 }
@@ -51,9 +51,126 @@ header h1 {
 
 .header-actions {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
-  min-width: 340px;
+  flex: 1;
+  min-width: 0;
+}
+
+.toolbar-strip {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.toolbar-block {
+  background: rgba(31, 31, 31, 0.8);
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 8px 10px;
+  min-width: 220px;
+}
+
+.toolbar-block h3 {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a8a8a8;
+  margin-bottom: 6px;
+}
+
+.toolbar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar-row p {
+  font-size: 0.8rem;
+  color: #f0f0f0;
+  white-space: nowrap;
+}
+
+.toolbar-row input[type="color"] {
+  width: 34px;
+  height: 28px;
+  border: 1px solid #3b3b3b;
+  background: transparent;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.file-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 7px 12px;
+  background-color: #2a2a2a;
+  border: 1px solid #3c3c3c;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.file-button:hover {
+  background-color: #333;
+  border-color: #555;
+}
+
+#imagePreview {
+  width: 28px;
+  height: 28px;
+  image-rendering: pixelated;
+  border: 1px solid #3b3b3b;
+  background: #090909;
+}
+
+.image-block {
+  min-width: 330px;
+}
+
+.connection-block {
+  min-width: 320px;
+}
+
+#cubeEndpoint {
+  width: 130px;
+  min-height: 28px;
+  padding: 7px 8px;
+  background: #1b1b1b;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.toolbar-row button {
+  padding: 7px 12px;
+  font-size: 0.75rem;
+}
+
+.toolbar-row select {
+  background: #1b1b1b;
+  color: #fff;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 0.75rem;
+  min-width: 120px;
+}
+
+.buttons-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.modes-block {
+  min-width: 280px;
 }
 
 .badge {
@@ -72,7 +189,7 @@ header h1 {
 
 .workspace {
   display: grid;
-  grid-template-columns: 1.35fr 220px 1.2fr;
+  grid-template-columns: 1.45fr 54px 1.2fr;
   flex: 1;
   overflow: hidden;
 }
@@ -146,11 +263,23 @@ tr:hover {
 .control-panel {
   background-color: #181818;
   border-left: 1px solid #282828;
-  padding: 16px 12px;
+  border-right: 1px solid #282828;
+  padding: 10px 6px;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.slim-strip {
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.8), rgba(20, 20, 20, 0.9));
+}
+
+.strip-indicator {
+  width: 10px;
+  height: 70%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .panel-card {
@@ -158,12 +287,6 @@ tr:hover {
   border: 1px solid #2c2c2c;
   border-radius: 6px;
   padding: 14px 12px;
-}
-
-.compact-panel {
-  min-width: 300px;
-  max-width: 360px;
-  width: 100%;
 }
 
 .panel-card h3 {
@@ -293,22 +416,70 @@ button:hover:not(:disabled) {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid color-mix(in srgb, var(--led-color) 55%, white);
   transform-style: preserve-3d;
   cursor: pointer;
   pointer-events: auto;
   background:
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.72) 14%, currentColor 42%, rgba(0, 0, 0, 0.16) 72%, rgba(0, 0, 0, 0.7) 100%);
+    radial-gradient(circle at 28% 26%, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.78) 13%, color-mix(in srgb, var(--led-color) 92%, white) 28%, var(--led-color) 60%, color-mix(in srgb, var(--led-color) 72%, black) 88%, color-mix(in srgb, var(--led-color) 42%, black) 100%);
   box-shadow:
-    inset -2px -2px 3px rgba(0, 0, 0, 0.35),
-    inset 2px 2px 3px rgba(255, 255, 255, 0.14),
-    0 0 2px rgba(255, 255, 255, 0.15);
+    inset -2px -2px 3px rgba(0, 0, 0, 0.48),
+    inset 2px 2px 3px rgba(255, 255, 255, 0.3),
+    0 0 3px color-mix(in srgb, var(--led-color) 60%, transparent);
   opacity: 1;
   transition: transform 0.08s ease, opacity 0.12s ease, filter 0.12s ease;
   will-change: transform;
+}
+
+.node-3d::before,
+.node-3d::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.node-3d::before {
+  width: 17px;
+  height: 17px;
+  left: -3px;
+  top: -3px;
+  z-index: -1;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.85) 42%, rgba(0, 0, 0, 0.35) 68%, transparent 72%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transform: translateZ(-2px);
+}
+
+.node-3d::after {
+  width: 3px;
+  height: 3px;
+  left: 2px;
+  top: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.75);
+}
+
+.node-3d.is-lit::before {
+  opacity: 0.35;
+}
+
+.node-3d.is-lit::after {
+  width: 4px;
+  height: 4px;
+  left: 2px;
+  top: 2px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.95);
+}
+
+.node-3d.is-lit {
+  z-index: 2;
+  box-shadow:
+    inset -2px -2px 3px rgba(0, 0, 0, 0.42),
+    inset 2px 2px 3px rgba(255, 255, 255, 0.36),
+    0 0 8px color-mix(in srgb, var(--led-color) 72%, transparent);
 }
 
 .node-3d:hover {
