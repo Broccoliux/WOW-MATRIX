@@ -1,6 +1,19 @@
 const state = {
   leds: [],
-  selectedLEDs: new Set()
+  selectedLEDs: new Set(),
+  rotationX: 62,
+  rotationY: -36,
+  rotationZ: 0,
+  dragging: false,
+  dragStartX: 0,
+  dragStartY: 0,
+  lastX: 0,
+  lastY: 0,
+  lastZ: 0,
+  velocityX: 0,
+  velocityY: 0,
+  velocityZ: 0,
+  autoSpin: 0
 };
 
 function initLEDGrid() {
@@ -26,6 +39,7 @@ function initLEDGrid() {
   }
   renderTable(state.leds);
   render3DMatrix();
+  applyMatrixRotation();
   console.log(`Initialized full matrix with ${state.leds.length} individual LEDs.`);
 }
 
@@ -143,59 +157,119 @@ function render3DMatrix() {
   const space = document.getElementById('matrix3DSpace');
   space.innerHTML = '';
 
-  const spacing = 35;
-  const offset = -105;
+  const spacing = 22;
+  const volume = 8;
 
   state.leds.forEach(led => {
     const node = document.createElement('div');
     node.className = 'node-3d';
     node.id = `node-3d-${led.id}`;
 
-    const px = led.x * spacing + offset;
-    const py = led.y * spacing + offset;
-    const pz = led.z * spacing + offset;
+    const centerOffset = (volume - 1) * spacing / 2;
+    const px = (led.x - 3.5) * spacing;
+    const py = (led.y - 3.5) * spacing;
+    const pz = (led.z - 3.5) * spacing;
 
+    node.style.color = led.color;
+    node.style.background = led.color;
     node.style.transform = `translate3d(${px}px, ${py}px, ${pz}px)`;
-    node.style.backgroundColor = led.color;
+    node.style.boxShadow = 'inset -2px -2px 3px rgba(0,0,0,0.3), inset 2px 2px 3px rgba(255,255,255,0.2)';
 
-    if (led.color !== '#000000') {
-      node.style.boxShadow = `0 0 8px ${led.color}`;
+    if (state.selectedLEDs.has(led.id)) {
+      node.classList.add('is-selected');
     }
 
-    node.addEventListener('click', () => {
+    node.addEventListener('click', (event) => {
+      event.stopPropagation();
       toggleSelectLED(led.id);
       renderTable(state.leds);
+      render3DMatrix();
     });
 
     space.appendChild(node);
   });
 }
 
-function rotateMatrixX(val) {
+function applyMatrixRotation() {
   const space = document.getElementById('matrix3DSpace');
-  const currentY = space.dataset.y || -45;
-  space.style.transform = `rotateX(${val}deg) rotateY(${currentY}deg)`;
-  space.dataset.x = val;
+  if (!space) return;
+  space.style.transform = `translate(-50%, -50%) rotateX(${state.rotationX}deg) rotateY(${state.rotationY}deg) rotateZ(${state.rotationZ}deg)`;
+}
+
+function rotateMatrixX(val) {
+  state.rotationX = Number(val);
+  applyMatrixRotation();
 }
 
 function rotateMatrixY(val) {
-  const space = document.getElementById('matrix3DSpace');
-  const currentX = space.dataset.x || 45;
-  space.style.transform = `rotateX(${currentX}deg) rotateY(${val}deg)`;
-  space.dataset.y = val;
+  state.rotationY = Number(val);
+  applyMatrixRotation();
 }
-
-let isDragging = false;
-let startX = 0;
-let startY = 0;
-let currentRotationX = 45;
-let currentRotationY = -45;
 
 const viewport = document.querySelector('.viewport-section');
 
-
-viewport.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startX = e.clientX;
-  startY = e.clientY;
+viewport.addEventListener('pointerdown', (event) => {
+  state.dragging = true;
+  state.dragStartX = event.clientX;
+  state.dragStartY = event.clientY;
+  state.lastX = state.rotationY;
+  state.lastY = state.rotationX;
+  state.lastZ = state.rotationZ;
+  state.velocityX = 0;
+  state.velocityY = 0;
+  state.velocityZ = 0;
+  viewport.setPointerCapture(event.pointerId);
 });
+
+viewport.addEventListener('pointermove', (event) => {
+  if (!state.dragging) return;
+
+  const deltaX = event.clientX - state.dragStartX;
+  const deltaY = event.clientY - state.dragStartY;
+
+  state.velocityX = deltaX * 0.18;
+  state.velocityY = deltaY * 0.18;
+  state.velocityZ = (deltaX * 0.08) + (deltaY * 0.05);
+
+  state.rotationY = state.lastX + deltaX * 0.35;
+  state.rotationX = state.lastY - deltaY * 0.35;
+  state.rotationZ = state.lastZ + (deltaX * 0.12 + deltaY * 0.08);
+  state.rotationX = Math.max(-89, Math.min(89, state.rotationX));
+
+  applyMatrixRotation();
+});
+
+function animateMatrix() {
+  if (!state.dragging) {
+    state.rotationY += state.velocityX * 0.08;
+    state.rotationX += state.velocityY * 0.08;
+    state.rotationZ += state.velocityZ * 0.08;
+    state.rotationX = Math.max(-89, Math.min(89, state.rotationX));
+
+    state.velocityX *= 0.92;
+    state.velocityY *= 0.92;
+    state.velocityZ *= 0.92;
+
+    if (Math.abs(state.velocityX) < 0.02) state.velocityX = 0;
+    if (Math.abs(state.velocityY) < 0.02) state.velocityY = 0;
+    if (Math.abs(state.velocityZ) < 0.02) state.velocityZ = 0;
+
+    applyMatrixRotation();
+  }
+
+  requestAnimationFrame(animateMatrix);
+}
+
+viewport.addEventListener('pointerup', () => {
+  state.dragging = false;
+});
+
+viewport.addEventListener('pointerleave', () => {
+  state.dragging = false;
+});
+
+viewport.addEventListener('pointercancel', () => {
+  state.dragging = false;
+});
+
+requestAnimationFrame(animateMatrix);
