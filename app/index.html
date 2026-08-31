@@ -18,15 +18,56 @@
       </div>
 
       <div class="header-actions">
-        <div class="panel-card compact-panel">
-          <h3>Bulk Selection Actions</h3>
-          <p id="selectedCount">Selected: 0 LEDs</p>
-
-          <div class="color-picker-group">
-            <label for="bulkColorPicker">Assign Color:</label>
-            <input type="color" id="bulkColorPicker" value="#00ffcc">
+        <div class="toolbar-strip">
+          <div class="toolbar-block connection-block">
+            <h3>Wi-Fi Cube</h3>
+            <div class="toolbar-row">
+              <input type="url" id="cubeEndpoint" value="" placeholder="ESP32 address" aria-label="ESP32 cube address">
+              <button type="button" onclick="connectCube()">Connect</button>
+              <button type="button" onclick="openCubePortal()">Open Cube</button>
+            </div>
           </div>
-          <button id="applyBulkColorBtn" class="btn-primary" onclick="applyColorToSelected()">Apply to Selected</button>
+
+          <div class="toolbar-block">
+            <h3>Bulk Selection</h3>
+            <div class="toolbar-row">
+              <p id="selectedCount">Selected: 0 LEDs</p>
+              <input type="color" id="bulkColorPicker" value="#00ffcc">
+              <button id="applyBulkColorBtn" class="btn-primary" onclick="applyColorToSelected()">Apply</button>
+            </div>
+          </div>
+
+          <div class="toolbar-block modes-block">
+            <h3>Global Modes</h3>
+            <div class="toolbar-row buttons-inline">
+              <button onclick="setMode('solid')">Solid Fill</button>
+              <button id="animationToggleBtn" type="button" onclick="toggleAnimationMenu()">Animations</button>
+              <input type="color" id="animationColorPicker" value="#00ff88" aria-label="Animation color">
+              <select id="animationSelect" onchange="setMode(this.value)" hidden>
+                <option value="none">Select Animation</option>
+                <option value="rain">Rain</option>
+                <option value="pulse">Pulse</option>
+                <option value="wave">Wave</option>
+                <option value="ball">Bouncing Ball</option>
+                <option value="lightning">Lightning</option>
+              </select>
+              <button onclick="clearMatrix()">Clear All</button>
+            </div>
+          </div>
+
+          <div class="toolbar-block image-block">
+            <h3>Image Mapper</h3>
+            <div class="toolbar-row">
+              <label class="file-button" for="imageUpload">Load Image</label>
+              <input type="file" id="imageUpload" accept="image/*" onchange="handleImageUpload(event)" hidden>
+              <canvas id="imagePreview" width="8" height="8" aria-label="8 by 8 image preview"></canvas>
+              <select id="imageDepthMode" aria-label="Image depth mode" onchange="reapplyLoadedImage()">
+                <option value="volume">3D Volume</option>
+                <option value="front">Front Face</option>
+              </select>
+              <button type="button" onclick="clearImageMatrix()">Clear Image</button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -54,16 +95,9 @@
         </div>
       </section>
 
-      <section class="control-panel">
-        <div class="panel-card">
-          <h3>Global Modes</h3>
-          <div class="button-grid">
-            <button onclick="setMode('solid')">Solid Fill</button>
-            <button onclick="setMode('animations')">Animations</button>
-            <button onclick="clearMatrix()">Clear All</button>
-          </div>
-        </div>
-      </section>
+      <aside class="control-panel slim-strip">
+        <div class="strip-indicator"></div>
+      </aside>
 
       <section class="viewport-section">
         <div id="matrix3DSpace" class="matrix-3d-space"></div>
