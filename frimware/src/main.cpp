@@ -10,9 +10,10 @@ void setup()
 
   cube_init();
   wifi_init_ap();
+  wifi_server_begin();
 }
 
 void loop()
 {
-  delay(1000);
+  wifi_server_handle();
 }
