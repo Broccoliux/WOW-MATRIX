@@ -12,8 +12,23 @@
 
   <div class="app-container">
     <header>
-      <h1>Matrix Direct Controller</h1>
-      <span id="connectionStatus" class="badge offline">Offline</span>
+      <div class="header-title-wrap">
+        <h1>Matrix Direct Controller</h1>
+        <span id="connectionStatus" class="badge offline">Offline</span>
+      </div>
+
+      <div class="header-actions">
+        <div class="panel-card compact-panel">
+          <h3>Bulk Selection Actions</h3>
+          <p id="selectedCount">Selected: 0 LEDs</p>
+
+          <div class="color-picker-group">
+            <label for="bulkColorPicker">Assign Color:</label>
+            <input type="color" id="bulkColorPicker" value="#00ffcc">
+          </div>
+          <button id="applyBulkColorBtn" class="btn-primary" onclick="applyColorToSelected()">Apply to Selected</button>
+        </div>
+      </div>
     </header>
 
     <main class="workspace">
@@ -41,17 +56,6 @@
 
       <section class="control-panel">
         <div class="panel-card">
-          <h3>Bulk Selection Actions</h3>
-          <p id="selectedCount">Selected: 0 LEDs</p>
-
-          <div class="color-picker-group">
-            <label for="bulkColorPicker">Assign Color:</label>
-            <input type="color" id="bulkColorPicker" value="#00ffcc">
-          </div>
-          <button id="applyBulkColorBtn" class="btn-primary" onclick="applyColorToSelected()">Apply to Selected</button>
-        </div>
-
-        <div class="panel-card">
           <h3>Global Modes</h3>
           <div class="button-grid">
             <button onclick="setMode('solid')">Solid Fill</button>
@@ -62,14 +66,7 @@
       </section>
 
       <section class="viewport-section">
-        <div class="viewport-controls">
-          <label>Rotate View:</label>
-          <input type="range" min="0" max="360" value="45" oninput="rotateMatrixX(this.value)"> X
-          <input type="range" min="0" max="360" value="-45" oninput="rotateMatrixY(this.value)"> Y
-        </div>
-        <div id="matrix3DSpace" class="matrix-3d-space">
-
-        </div>
+        <div id="matrix3DSpace" class="matrix-3d-space"></div>
       </section>
     </main>
   </div>
