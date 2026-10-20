@@ -1,5 +1,7 @@
 # WOW MATRIX
 8x8x8 LED 3D Matrix
+<img width="1043" height="505" alt="image" src="https://github.com/user-attachments/assets/f0495e62-1780-430a-939f-a5fbf041d19f" />
+
 
 Built by Broccoli > ME <
 
