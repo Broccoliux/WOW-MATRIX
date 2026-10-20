@@ -53,6 +53,8 @@ index = z * 64 + y * 8 + x
 ```
 
 This is basically a visual 3D model of the cube CSS 3D transforms place each LED dot in space and dragging the viewport rotates the whole cube around X Y and Z The LEDs are rendered as little glowing bulbs with a highlight a colored center and a dark socket behind them
+![Uploading image.png…]()
+
 
 ## controls in the page
 
