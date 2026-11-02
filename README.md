@@ -21,6 +21,11 @@ The 3D enclosure is done and the PCB is done too the only part missing on the en
 
 The main thing still missing right now is the firmware because that is the part that actually makes the cube run for real
 
+<img width="658" height="373" alt="image" src="https://github.com/user-attachments/assets/31f57fe2-e4a4-4024-9e6c-8c6384b20fd0" />
+<img width="829" height="478" alt="image" src="https://github.com/user-attachments/assets/26d86aea-5222-4a10-a809-dc60dbceec1e" />
+
+
+
 ## repo layout
 
 ```text
